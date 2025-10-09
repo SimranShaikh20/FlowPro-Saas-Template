@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import SignUpDialog from "./SignUpDialog";
 
 const Hero = () => {
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero pt-16">
       {/* Background Image */}
@@ -35,16 +38,28 @@ const Hero = () => {
             automate workflows, and achieve more with less effort.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto"
+              onClick={() => setIsSignUpOpen(true)}
+            >
               Start Free Trial
             </Button>
-            <Button variant="glass" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto">
+            <Button 
+              variant="glass" 
+              size="lg" 
+              className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto"
+              onClick={() => window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')}
+            >
               <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               Watch Demo
             </Button>
           </div>
         </div>
       </div>
+
+      <SignUpDialog open={isSignUpOpen} onOpenChange={setIsSignUpOpen} />
     </section>
   );
 };

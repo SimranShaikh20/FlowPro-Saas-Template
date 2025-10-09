@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import SignUpDialog from "./SignUpDialog";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -56,7 +58,7 @@ const Navigation = () => {
             >
               Contact
             </button>
-            <Button variant="hero">
+            <Button variant="hero" onClick={() => setIsSignUpOpen(true)}>
               Get Started
             </Button>
           </div>
@@ -104,13 +106,15 @@ const Navigation = () => {
               >
                 Contact
               </button>
-              <Button variant="hero" size="lg" className="w-full">
+              <Button variant="hero" size="lg" className="w-full" onClick={() => setIsSignUpOpen(true)}>
                 Get Started
               </Button>
             </div>
           </div>
         )}
       </div>
+
+      <SignUpDialog open={isSignUpOpen} onOpenChange={setIsSignUpOpen} />
     </nav>
   );
 };

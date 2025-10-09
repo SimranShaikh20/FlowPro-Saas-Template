@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import SignUpDialog from "./SignUpDialog";
 
 const plans = [
   {
@@ -52,6 +53,7 @@ const plans = [
 
 const Pricing = () => {
   const [isYearly, setIsYearly] = useState(false);
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
 
   return (
     <section id="pricing" className="py-20 px-4">
@@ -120,6 +122,7 @@ const Pricing = () => {
               <Button
                 variant={plan.popular ? "hero" : "glass"}
                 className="w-full mb-6 h-11"
+                onClick={() => setIsSignUpOpen(true)}
               >
                 Get Started
               </Button>
@@ -136,6 +139,8 @@ const Pricing = () => {
           ))}
         </div>
       </div>
+
+      <SignUpDialog open={isSignUpOpen} onOpenChange={setIsSignUpOpen} />
     </section>
   );
 };

@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import SignUpDialog from "./SignUpDialog";
 
 const FinalCTA = () => {
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
   return (
     <section id="contact" className="py-20 px-4 relative overflow-hidden">
       {/* Background Effects */}
@@ -20,7 +23,12 @@ const FinalCTA = () => {
             Join thousands of teams already using FlowPro to streamline their
             operations and boost productivity.
           </p>
-          <Button variant="hero" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-7 h-auto group">
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-7 h-auto group"
+            onClick={() => setIsSignUpOpen(true)}
+          >
             Start Your Free Trial
             <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
@@ -29,6 +37,8 @@ const FinalCTA = () => {
           </p>
         </div>
       </div>
+
+      <SignUpDialog open={isSignUpOpen} onOpenChange={setIsSignUpOpen} />
     </section>
   );
 };
