@@ -20,9 +20,9 @@ const FinalCTA = () => {
             Join thousands of teams already using FlowPro to streamline their
             operations and boost productivity.
           </p>
-          <Button variant="hero" size="lg" className="text-lg px-10 py-7 h-auto group">
+          <Button variant="hero" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-7 h-auto group">
             Start Your Free Trial
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
           <p className="text-sm text-muted-foreground mt-4">
             No credit card required • 14-day free trial • Cancel anytime

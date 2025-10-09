@@ -56,7 +56,7 @@ const Navigation = () => {
             >
               Contact
             </button>
-            <Button variant="hero" size="lg">
+            <Button variant="hero">
               Get Started
             </Button>
           </div>

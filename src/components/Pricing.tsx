@@ -119,8 +119,7 @@ const Pricing = () => {
 
               <Button
                 variant={plan.popular ? "hero" : "glass"}
-                size="lg"
-                className="w-full mb-6"
+                className="w-full mb-6 h-11"
               >
                 Get Started
               </Button>

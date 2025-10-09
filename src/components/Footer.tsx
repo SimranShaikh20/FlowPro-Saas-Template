@@ -110,7 +110,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="bg-card border-border"
               />
-              <Button variant="hero" size="sm">
+              <Button variant="hero" className="h-9 text-sm">
                 Subscribe
               </Button>
             </div>

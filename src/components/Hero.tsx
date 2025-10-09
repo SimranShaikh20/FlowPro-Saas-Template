@@ -35,11 +35,11 @@ const Hero = () => {
             automate workflows, and achieve more with less effort.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6 h-auto">
+            <Button variant="hero" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto">
               Start Free Trial
             </Button>
-            <Button variant="glass" size="lg" className="text-lg px-8 py-6 h-auto">
-              <Play className="mr-2 h-5 w-5" />
+            <Button variant="glass" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto">
+              <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               Watch Demo
             </Button>
           </div>
