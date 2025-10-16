@@ -236,11 +236,11 @@ This template includes email functionality powered by **Resend API**. When end u
 
 If you need help customizing this template or building additional features, feel free to reach out:
 
-🔗 **GitHub:** [Your GitHub Profile](https://github.com/SimranShaikh20)  
-💼 **Portfolio:** [Your Portfolio URL](https://simran-shaikh-protfolio.netlify.app/)
+🔗 **GitHub:** [GitHub Profile](https://github.com/SimranShaikh20)  
+💼 **Portfolio:** [Portfolio URL](https://simran-shaikh-protfolio.netlify.app/)
 
 
-We offer:
+I offer:
 - Custom design modifications
 - Feature development
 - Integration with third-party services
