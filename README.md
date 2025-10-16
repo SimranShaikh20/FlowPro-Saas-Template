@@ -52,10 +52,10 @@ A stunning, fully responsive SaaS landing page built with React, TypeScript, and
 
 ```bash
 # Clone the repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/SimranShaikh20/FlowPro-Saas-Template
 
 # Navigate to project directory
-cd <YOUR_PROJECT_NAME>
+cd FlowPro-Saas-Template
 
 # Install dependencies
 npm install
