@@ -127,31 +127,24 @@ src/
 
 ## 🚀 Deployment
 
-### Deploy with Lovable (Recommended)
-1. Visit [Lovable Project](https://lovable.dev/projects/5a5a2d58-7fae-479b-951b-85c5ce972d3f)
-2. Click **Share → Publish**
-3. Your site will be live instantly
-
-### Deploy Manually
-
-#### Build for Production
+### Build for Production
 ```bash
 npm run build
 ```
 
-#### Deploy to Vercel
+### Deploy to Vercel
 ```bash
 npm i -g vercel
 vercel
 ```
 
-#### Deploy to Netlify
+### Deploy to Netlify
 ```bash
 npm i -g netlify-cli
 netlify deploy --prod
 ```
 
-#### Other Platforms
+### Other Platforms
 The `dist/` folder contains static files that can be deployed to:
 - GitHub Pages
 - AWS S3 + CloudFront
@@ -186,31 +179,27 @@ This project includes:
 
 ## 🤝 Contributing
 
-Built with [Lovable](https://lovable.dev) - the AI-powered web development platform.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### Development Workflow
 
-1. **Edit in Lovable:** Visit the project URL and use AI prompts
-2. **Edit Locally:** Clone repo, make changes, and push to GitHub
-3. **Bidirectional Sync:** Changes sync automatically between Lovable and GitHub
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📄 License
 
 This project is licensed under the MIT License.
 
-## 🔗 Links
-
-- **Live Project:** [Lovable Project](https://lovable.dev/projects/5a5a2d58-7fae-479b-951b-85c5ce972d3f)
-- **Documentation:** [Lovable Docs](https://docs.lovable.dev/)
-- **Custom Domain Setup:** [Domain Guide](https://docs.lovable.dev/features/custom-domain)
-
 ## 💡 Tips
 
-- Use **Visual Edits** in Lovable for quick design tweaks without using credits
-- Leverage the design system - avoid inline styles
+- Use the design system - avoid inline styles
 - All animations are CSS-based for optimal performance
 - Mobile-first responsive design approach
+- Leverage Tailwind's utility classes for consistent styling
 
 ---
 
-Built with ❤️ using [Lovable](https://lovable.dev)
+Built with ❤️ using React, TypeScript, and Tailwind CSS
