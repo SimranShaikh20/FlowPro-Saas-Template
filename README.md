@@ -200,6 +200,54 @@ This project is licensed under the MIT License.
 - Mobile-first responsive design approach
 - Leverage Tailwind's utility classes for consistent styling
 
+## 📧 Contact & Custom Development
+
+### Email Notifications
+This template includes email functionality powered by **Resend API**. When end users submit forms (contact form, newsletter signup, or demo requests), notifications are automatically sent to the admin/author email.
+
+### Setup Email Notifications with Resend
+
+1. **Get Resend API Key**
+   - Sign up at [Resend](https://resend.com/)
+   - Create an API key from your dashboard
+   - Verify your domain (or use Resend's test domain for development)
+
+2. **Configure Environment Variables**
+   - Create a `.env` file in your project root:
+   ```env
+   VITE_RESEND_API_KEY=your-resend-api-key
+   VITE_ADMIN_EMAIL=your-email@example.com
+   VITE_FROM_EMAIL=noreply@yourdomain.com
+   ```
+
+3. **Form Submissions Include:**
+   - User's name and email
+   - Message/inquiry details
+   - Timestamp
+   - Selected pricing plan (if applicable)
+
+4. **Resend Features Used:**
+   - Simple REST API integration
+   - Reliable email delivery
+   - Email templates support
+   - Real-time delivery tracking
+
+### Need Custom Development?
+
+If you need help customizing this template or building additional features, feel free to reach out:
+
+🔗 **GitHub:** [Your GitHub Profile](https://github.com/SimranShaikh20)  
+💼 **Portfolio:** [Your Portfolio URL](https://simran-shaikh-protfolio.netlify.app/)
+
+
+We offer:
+- Custom design modifications
+- Feature development
+- Integration with third-party services
+- Performance optimization
+- SEO enhancements
+- Ongoing support and maintenance
+
 ---
 
 Built with ❤️ using React, TypeScript, and Tailwind CSS
